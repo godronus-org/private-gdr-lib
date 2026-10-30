@@ -3,7 +3,7 @@
 
 /// The greeting line a consumer returns.
 pub fn greeting(word: &str) -> String {
-    format!("{word} from gdr-lib")
+    format!("{} from gdr-lib", word.trim())
 }
 
 #[cfg(test)]
@@ -13,5 +13,10 @@ mod tests {
     #[test]
     fn greeting_names_the_library() {
         assert_eq!(greeting("hello"), "hello from gdr-lib");
+    }
+
+    #[test]
+    fn greeting_ignores_surrounding_whitespace() {
+        assert_eq!(greeting(" hi\n"), "hi from gdr-lib");
     }
 }
