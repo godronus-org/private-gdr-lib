@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/godronus-org/toolkit/v1/schema/fastedge.schema.json",
+  // A library deploys nothing: its v* tag runs the tests, then exports to the
+  // public mirror godronus-org/gdr-lib, which consumers depend on (T34).
+  "kind": "library",
+  "language": "rust"
+}
