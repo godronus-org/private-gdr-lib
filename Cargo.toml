@@ -1,6 +1,6 @@
 [package]
 name = "gdr-lib"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "POC org library (spike 4): consumed as a git dependency pinned to a tag."
 license = "Apache-2.0"
